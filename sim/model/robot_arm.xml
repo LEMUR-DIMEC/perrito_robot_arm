@@ -18,9 +18,9 @@
 
   <asset>
     <mesh file="base_link.obj"/>
-    <!-- <mesh file="brazito_Link01.stl"/>
-    <mesh file="brazito_Link02.stl"/>
-    <mesh file="brazito_Link03.stl"/>
+    <mesh file="L1.obj"/>
+    <mesh file="L2.obj"/>
+    <!-- <mesh file="brazito_Link03.stl"/>
     <mesh file="brazito_Link04.stl"/>
     <mesh file="brazito_Link05.stl"/>
     <mesh file="brazito_Link06.stl"/> -->
@@ -32,20 +32,20 @@
         diaginertia="0.000531375 0.000415207 0.000378658"/>
       <geom class="visual" mesh="base_link"/>
       <!-- <geom size="0.0325 0.0255" pos="0 0 0.0255" class="collision"/> -->
-      <!-- <body name="link01" pos="0 0 0.0585">
+      <body name="link01" pos="0 0 0.0906">
         <inertial pos="2.47e-06 -0.00025198 0.0231717" quat="0.708578 0.705633 0.000281462 -0.000355927" mass="0.673326"
           diaginertia="0.00128328 0.000839362 0.000719308"/>
         <joint name="joint1" axis="0 0 1" range="-2.61799 2.61799"/>
-        <geom class="visual" mesh="brazito_Link01"/>
-        <body name="link02" pos="0 0 0.045">
+        <geom class="visual" mesh="L1"/>
+        <body name="link02" pos="-0.0065 0 0.0902">
           <inertial pos="-0.110126 0.00240029 0.00158266" quat="0.00748058 0.707092 -0.0114473 0.70699" mass="1.19132"
             diaginertia="0.0246612 0.0243113 0.00100468"/>
-          <joint name="joint2" axis="0 1 0" range="0 2.96706" damping="2"/>
-          <geom class="visual" mesh="brazito_Link02"/>
+          <joint name="joint2" axis="1 0 0" range="0 2.96706" damping="2"/>
+          <geom class="visual" mesh="L2"/>
           <geom size="0.0325 0.051" quat="1 1 0 0" class="collision"/>
           <geom size="0.0225 0.1175" pos="-0.1625 0 0" quat="1 0 1 0" class="collision"/>
           <geom size="0.0325 0.0255" pos="-0.35 0 0" quat="1 1 0 0" class="collision"/>
-          <body name="link03" pos="-0.35 0 0">
+          <!-- <body name="link03" pos="-0.35 0 0">
             <inertial pos="0.106092 -0.00541815 0.0347638" quat="0.540557 0.443575 0.426319 0.573839" mass="0.839409"
               diaginertia="0.00954365 0.00938711 0.000558432"/>
             <joint name="joint3" axis="0 1 0" range="-2.87979 0"/>
@@ -72,21 +72,21 @@
                 </body>
               </body>
             </body>
-          </body>
+          </body> -->
         </body> 
-      </body>-->
+      </body>
     </body>
   </worldbody>
 
-  <!-- <actuator>
+  <actuator>
     <general class="brazito" name="motor1" joint="joint1" ctrlrange="-2.61799 2.61799"/>
     <general class="brazito" name="motor2" joint="joint2" ctrlrange="0 2.96706" forcerange="-60 60" gainprm="1500"
       biasprm="0 -1500 -150"/>
-    <general class="brazito" name="motor3" joint="joint3" ctrlrange="-2.87979 0"/>
+    <!-- <general class="brazito" name="motor3" joint="joint3" ctrlrange="-2.87979 0"/>
     <general class="brazito" name="motor4" joint="joint4" ctrlrange="-1.51844 1.51844"/>
     <general class="brazito" name="motor5" joint="joint5" ctrlrange="-1.3439 1.3439"/>
-    <general class="brazito" name="motor6" joint="joint6" ctrlrange="-2.79253 2.79253"/>
-  </actuator> -->
+    <general class="brazito" name="motor6" joint="joint6" ctrlrange="-2.79253 2.79253"/> -->
+  </actuator>
 
   <!-- <keyframe>
     <key name="home" qpos="0 0.785 -0.261 -0.523 0 0" ctrl="0 0.785 -0.261 -0.523 0 0"/>
