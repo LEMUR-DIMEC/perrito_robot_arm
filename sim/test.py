@@ -3,7 +3,7 @@ import mujoco.viewer
 import time
 import numpy as np
 
-model = mujoco.MjModel.from_xml_path("C:/Users/waoct/Desktop/cosas u/BRAZO/perrito_robot_arm-dev/sim/model/scene.xml")
+model = mujoco.MjModel.from_xml_path("sim/model/scene.xml")
 data = mujoco.MjData(model)
 model.opt.gravity = (0, 0, -9.81)
 mujoco.mj_resetDataKeyframe(model, data, 0)
