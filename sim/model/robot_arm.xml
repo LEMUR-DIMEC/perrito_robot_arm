@@ -81,6 +81,7 @@
                   <joint name="joint6" axis="0 0 1" range="-2.62 2.62"/>
                   <geom class="visual" mesh="L6"/>
                   <geom size="0.0325 0.0255" pos="0.0255 0 0" quat="1 0 1 0" class="collision"/>
+                  <site name="attachment_site" size="0.01" pos="0 0 -0.1" quat="-1 1 1 1" rgba="1 0 0 1" group="1"/>
                 </body>
               </body>
             </body>
@@ -103,5 +104,6 @@
   <keyframe>
     <key name="home" qpos="0 1.58 1.07 1.62 -2.04 0" ctrl="0 1.58 1.07 1.62 -2.04 0"/>
     <key name="up" qpos="0 0 0 0 0 0" ctrl="0 0 0 0 0 0"/>
+    <key name = "pick" qpos="0.4978 2.35961 -0.0242714 1.61975 2.62017 2.55423e-06"  ctrl="0.4978 2.355 -0.0262 1.62 2.62 0"/>
   </keyframe>
 </mujoco>
