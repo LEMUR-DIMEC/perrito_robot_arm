@@ -63,6 +63,9 @@ if __name__ == "__main__":
         while viewer.is_running():
             # Update task target.
             T_wt = mink.SE3.from_mocap_name(model, data, "target")
+            #Method for setting fixed target
+            # tar= mink.SE3.identity()
+            # tar.translation()[:] = np.array([0.3, 0.0, 0.3])
             end_effector_task.set_target(T_wt)
 
             # Compute velocity and integrate into the next configuration.
@@ -74,8 +77,8 @@ if __name__ == "__main__":
 
             # Note the below are optional: they are used to visualize the output of the
             # fromto sensor which is used by the collision avoidance constraint.
-            mujoco.mj_fwdPosition(model, data)
-            mujoco.mj_sensorPos(model, data)
+            # mujoco.mj_fwdPosition(model, data)
+            # mujoco.mj_sensorPos(model, data)
 
             # Visualize at fixed FPS.
             viewer.sync()
