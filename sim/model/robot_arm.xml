@@ -102,13 +102,13 @@
   </worldbody>
 
   <actuator>
-    <general class="brazito" name="motor1" joint="joint1" ctrlrange="-2.62 2.62"/>
-    <general class="brazito" name="motor2" joint="joint2" ctrlrange="-0.7 4" forcerange="-60 60" gainprm="1500"
+    <general class="brazito" name="motor1" joint="joint1" ctrlrange="-2.62 2.62" forcerange="-15 15"/>
+    <general class="brazito" name="motor2" joint="joint2" ctrlrange="-0.7 4" forcerange="-54 54" gainprm="1500"
       biasprm="0 -1500 -150"/>
-    <general class="brazito" name="motor3" joint="joint3" ctrlrange="-2.62 2.62"/>
-    <general class="brazito" name="motor4" joint="joint4" ctrlrange="-2.62 2.62"/>
-    <general class="brazito" name="motor5" joint="joint5" ctrlrange="-2.62 2.62"/>
-    <general class="brazito" name="motor6" joint="joint6" ctrlrange="-2.62 2.62"/>
+    <general class="brazito" name="motor3" joint="joint3" ctrlrange="-2.62 2.62" forcerange="-24 24" />
+    <general class="brazito" name="motor4" joint="joint4" ctrlrange="-2.62 2.62" forcerange="-4 4"/>
+    <general class="brazito" name="motor5" joint="joint5" ctrlrange="-2.62 2.62" forcerange="-5 5"/>
+    <general class="brazito" name="motor6" joint="joint6" ctrlrange="-2.62 2.62" forcerange="-4 4"/>
   </actuator>
 
   <keyframe>
